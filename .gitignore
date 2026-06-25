@@ -1,0 +1,6 @@
+# Source deck (not part of the website)
+*.pptx
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
