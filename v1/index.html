@@ -294,7 +294,6 @@
               </div>
             </figure>
           </div>
-          </div>
         </div>
       </section>
 
@@ -439,19 +438,194 @@
       </section>
 
       <section id="excel" class="cap-band cap-band--char" aria-labelledby="excel-title">
-        <div class="cap-inner">
-          <div class="cap-copy">
+        <div class="cap-inner cap-inner--stack">
+          <div class="cap-head">
             <p class="eyebrow">Capability 03</p>
             <h2 id="excel-title" class="cap-title">WXP Skills</h2>
-            <p class="cap-lede">Spreadsheet intelligence for business work: multi-sheet reasoning, formula repair, chart optimization, financial analysis, and reporting workflows.</p>
-          </div>
-          <div class="cap-visual">
-            <div class="sheet-visual" aria-label="Spreadsheet visualization">
-              <span></span><span></span><span class="hot"></span><span></span>
-              <span></span><span class="hot"></span><span></span><span></span>
-              <span></span><span></span><span></span><span class="hot"></span>
-              <span class="hot"></span><span></span><span></span><span></span>
+            <div class="xl-subhead">
+              <span class="xl-xlogo" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="7" fill="#107C41"/><path d="M11 10l10 12M21 10 11 22" stroke="#fff" stroke-width="2.6" stroke-linecap="round" fill="none"/></svg>
+              </span>
+              <span>Excel</span>
             </div>
+            <p class="cap-lede">WXP Skills give the agent native command of <b>Word, Excel and PowerPoint</b>. We're starting with the spreadsheet — the hardest of the three, where one wrong cell can break an entire model. Three ideas make it dependable: it <b>reads a spreadsheet before it acts</b>, <b>builds it through a repeatable process</b> rather than by hand, and <b>keeps measuring its own quality</b>. Word and PowerPoint build on the same foundation.</p>
+            <a class="cap-link cap-link--gh" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .32.21.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+              <span>office-excel-generate · GitHub</span>
+            </a>
+          </div>
+
+          <div class="xl-result">
+            <div class="xl-result-stat tone-green">
+              <span class="xl-result-tag">GDPVal win rate vs. production</span>
+              <div class="xl-result-shift">
+                <span class="xl-result-from">31.6%</span>
+                <span class="xl-result-arrow" aria-hidden="true">→</span>
+                <span class="xl-result-to">36.8%</span>
+              </div>
+              <span class="xl-result-delta">+5.3pp</span>
+              <p class="xl-result-sub">Blind A/B against expert human deliverables, across 9 GDP sectors. Sonnet 4.6 vs. the production agent.</p>
+            </div>
+            <figure class="xl-sector" aria-label="GDPVal win rate by sector">
+              <figcaption class="xl-sector-cap">
+                <span class="xl-sector-title">Biggest sector gains — production vs. XLSX_V2</span>
+                <span class="xl-sector-sub">where the lift concentrates</span>
+              </figcaption>
+              <table class="xl-sector-table">
+                <thead>
+                  <tr><th>Sector</th><th>Production</th><th>XLSX_V2</th><th>Δ pp</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Professional, Scientific &amp; Technical Services</td><td>22.2</td><td>33.3</td><td class="xl-d xl-d--up">+11.1</td></tr>
+                  <tr><td>Wholesale Trade</td><td>16.7</td><td>27.8</td><td class="xl-d xl-d--up">+11.1</td></tr>
+                  <tr><td>Health Care and Social Assistance</td><td>40.0</td><td>50.0</td><td class="xl-d xl-d--up">+10.0</td></tr>
+                  <tr class="xl-sector-total"><td>All sectors</td><td>31.6</td><td>36.8</td><td class="xl-d xl-d--up">+5.3</td></tr>
+                </tbody>
+              </table>
+            </figure>
+          </div>
+
+          <div class="xl-pillars">
+            <article class="xl-pillar tone-cyan">
+              <header class="xl-pillar-head">
+                <span class="xl-pillar-num">01</span>
+                <div class="xl-pillar-copy">
+                  <h3>It reads Excel before it acts</h3>
+                  <p>Even with very large spreadsheets, the agent first works out <b>what's inside</b> — which tables exist, where the data lives, and how it should be read — instead of blindly processing the whole file. A million-row workbook becomes a compact, structured view it can actually reason over.</p>
+                </div>
+              </header>
+              <div class="xl-stage">
+                <div class="xls" role="img" aria-label="The agent scanning a spreadsheet to detect sheets, tables and data types">
+                  <div class="xls-chrome">
+                    <span class="xls-traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="xls-file"><span class="xls-xicon" aria-hidden="true">X</span>Q3_sales_master.xlsx</span>
+                  </div>
+                  <div class="xls-body">
+                    <div class="xls-colrow"><span class="xls-corner"></span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span></div>
+                    <div class="xls-rows">
+                      <div class="xls-row xls-row--head" style="animation-delay:0s"><span class="xls-rn">1</span><span class="xls-c">Region</span><span class="xls-c">Q1</span><span class="xls-c">Q2</span><span class="xls-c">Q3</span><span class="xls-c">Revenue</span><span class="xls-c">Margin</span></div>
+                      <div class="xls-row" style="animation-delay:.45s"><span class="xls-rn">2</span><span class="xls-c">North</span><span class="xls-c xls-n">1,240</span><span class="xls-c xls-n">1,380</span><span class="xls-c xls-n">1,510</span><span class="xls-c xls-n">$4.13M</span><span class="xls-c xls-pct">24.3%</span></div>
+                      <div class="xls-row" style="animation-delay:.9s"><span class="xls-rn">3</span><span class="xls-c">South</span><span class="xls-c xls-n">980</span><span class="xls-c xls-n">1,020</span><span class="xls-c xls-n">1,140</span><span class="xls-c xls-n">$3.14M</span><span class="xls-c xls-pct">21.7%</span></div>
+                      <div class="xls-row" style="animation-delay:1.35s"><span class="xls-rn">4</span><span class="xls-c">East</span><span class="xls-c xls-n">1,560</span><span class="xls-c xls-n">1,610</span><span class="xls-c xls-n">1,700</span><span class="xls-c xls-n">$4.87M</span><span class="xls-c xls-pct">26.1%</span></div>
+                      <div class="xls-row" style="animation-delay:1.8s"><span class="xls-rn">5</span><span class="xls-c">West</span><span class="xls-c xls-n">870</span><span class="xls-c xls-n">910</span><span class="xls-c xls-n">1,005</span><span class="xls-c xls-n">$2.79M</span><span class="xls-c xls-pct">19.4%</span></div>
+                      <div class="xls-row" style="animation-delay:2.25s"><span class="xls-rn">6</span><span class="xls-c">EMEA</span><span class="xls-c xls-n">2,010</span><span class="xls-c xls-n">2,140</span><span class="xls-c xls-n">2,260</span><span class="xls-c xls-n">$6.41M</span><span class="xls-c xls-pct">28.0%</span></div>
+                      <div class="xls-row" style="animation-delay:2.7s"><span class="xls-rn">7</span><span class="xls-c">APAC</span><span class="xls-c xls-n">1,330</span><span class="xls-c xls-n">1,420</span><span class="xls-c xls-n">1,505</span><span class="xls-c xls-n">$4.26M</span><span class="xls-c xls-pct">23.5%</span></div>
+                      <div class="xls-island" aria-hidden="true"><span class="xls-island-tag">table detected</span></div>
+                      <div class="xls-beam" aria-hidden="true"></div>
+                    </div>
+                  </div>
+                  <div class="xls-readout">
+                    <span class="xls-chip" style="animation-delay:.3s">4 sheets</span>
+                    <span class="xls-chip" style="animation-delay:.5s">7 tables</span>
+                    <span class="xls-chip" style="animation-delay:.7s">82% numbers</span>
+                    <span class="xls-chip xls-chip--on" style="animation-delay:.95s">→ reads as a data table</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="xl-pillar tone-green">
+              <header class="xl-pillar-head">
+                <span class="xl-pillar-num">02</span>
+                <div class="xl-pillar-copy">
+                  <h3>From hand-crafted to a repeatable process</h3>
+                  <p>It turns Excel from <b>“done by hand, from experience”</b> into <b>“done by a process.”</b> First it organises the data, then it generates the tables, formulas and formatting in one consistent pass — so the result is stable and far less likely to miscopy a number or skip a step.</p>
+                </div>
+              </header>
+              <div class="xl-stage">
+                <div class="xl-make" role="img" aria-label="A raw CSV export is organised and generated into a clean, formatted Excel report with a chart">
+                  <div class="xls xls--raw">
+                    <div class="xls-chrome">
+                      <span class="xls-traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                      <span class="xls-file"><span class="xls-doc" aria-hidden="true">CSV</span>raw_export.csv</span>
+                    </div>
+                    <pre class="xr-raw">region,q1,q2,q3,rev
+North,1240,1380,1510,4.13
+South,980,1020,1140,3.14
+East,1560,1610,1700,4.87
+West,870,910,1005,2.79
+EMEA,2010,2140,2260,6.41</pre>
+                  </div>
+
+                  <div class="xl-make-flow" aria-hidden="true">
+                    <span class="xmf-track"><span class="xmf-pulse"></span></span>
+                    <span class="xmf-steps"><i>organise</i><i>plan</i><i>generate</i></span>
+                  </div>
+
+                  <div class="xls xls--report">
+                    <div class="xls-chrome">
+                      <span class="xls-traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                      <span class="xls-file"><span class="xls-xicon" aria-hidden="true">X</span>Q3_report.xlsx</span>
+                      <span class="xls-status xls-status--ok"><span class="xls-tick" aria-hidden="true">✓</span>formatted</span>
+                    </div>
+                    <div class="xr-body">
+                      <div class="xr-title">Q3 Regional Performance</div>
+                      <table class="xr-table">
+                        <thead><tr><th>Region</th><th>Revenue</th><th>Margin</th></tr></thead>
+                        <tbody>
+                          <tr><td>North</td><td>$4.13M</td><td class="xr-hi">24.3%</td></tr>
+                          <tr><td>South</td><td>$3.14M</td><td>21.7%</td></tr>
+                          <tr><td>East</td><td>$4.87M</td><td class="xr-hi">26.1%</td></tr>
+                          <tr><td>West</td><td>$2.79M</td><td class="xr-lo">19.4%</td></tr>
+                          <tr><td>EMEA</td><td>$6.41M</td><td class="xr-hi">28.0%</td></tr>
+                          <tr class="xr-total"><td>Total</td><td>$21.34M</td><td>24.2%</td></tr>
+                        </tbody>
+                      </table>
+                      <div class="xr-chart" aria-hidden="true">
+                        <span class="xr-chart-cap">Revenue by region ($M)</span>
+                        <div class="xr-bars">
+                          <div class="xr-bar"><span style="--h:64%"></span><i>N</i></div>
+                          <div class="xr-bar"><span style="--h:49%"></span><i>S</i></div>
+                          <div class="xr-bar"><span style="--h:76%"></span><i>E</i></div>
+                          <div class="xr-bar"><span style="--h:43%"></span><i>W</i></div>
+                          <div class="xr-bar xr-bar--top"><span style="--h:100%"></span><i>EM</i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="xl-pillar tone-rose">
+              <header class="xl-pillar-head">
+                <span class="xl-pillar-num">03</span>
+                <div class="xl-pillar-copy">
+                  <h3>It measures its own quality</h3>
+                  <p>It doesn't just hand back a file — it keeps <b>checking its own work</b>. A dedicated evaluation system verifies whether the output is correct, whether formulas are reliable, and whether the formatting matches expectations — so every new version's improvement over the old one can be <b>measured, not just claimed</b>.</p>
+                </div>
+              </header>
+              <div class="xl-stage">
+                <div class="xl-qa">
+                  <div class="xls xls--qa" role="img" aria-label="Quality checks turning formula errors into verified values">
+                    <div class="xls-chrome">
+                      <span class="xls-traffic" aria-hidden="true"><i></i><i></i><i></i></span>
+                      <span class="xls-file"><span class="xls-xicon" aria-hidden="true">X</span>model.xlsx</span>
+                      <span class="xls-status"><span class="xls-pulse" aria-hidden="true"></span>checking</span>
+                    </div>
+                    <div class="xls-body">
+                      <div class="xls-colrow"><span class="xls-corner"></span><span>A</span><span>B</span></div>
+                      <div class="xls-rows">
+                        <div class="xls-row"><span class="xls-rn">1</span><span class="xls-c">Margin</span><span class="xls-c xls-flip" style="--d:0s"><b class="bad">#DIV/0!</b><b class="ok">24.3%</b></span></div>
+                        <div class="xls-row"><span class="xls-rn">2</span><span class="xls-c">Growth</span><span class="xls-c xls-flip" style="--d:.5s"><b class="bad">#REF!</b><b class="ok">12.1%</b></span></div>
+                        <div class="xls-row"><span class="xls-rn">3</span><span class="xls-c">Total</span><span class="xls-c xls-flip" style="--d:1s"><b class="bad">#VALUE!</b><b class="ok">$1,284,500</b></span></div>
+                      </div>
+                    </div>
+                    <div class="xls-readout xls-readout--ok">
+                      <span class="xls-chip xls-chip--ok">0 errors</span>
+                      <span class="xls-chip">formulas verified</span>
+                    </div>
+                  </div>
+                  <ul class="xl-checks" aria-label="Automatic quality checks">
+                    <li style="--d:.2s">Structure</li>
+                    <li style="--d:.7s">Formula recalculation</li>
+                    <li style="--d:1.2s">Formatting</li>
+                    <li style="--d:1.7s">Common-mistake guardrails</li>
+                    <li style="--d:2.2s">Multi-angle scoring</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-const revealItems = document.querySelectorAll('.cap-inner, .cap-card, .evol-row, .proof-card, .section-heading');
+const revealItems = document.querySelectorAll('.cap-inner, .cap-card, .evol-row, .xl-pillar, .proof-card, .section-heading');
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
